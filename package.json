@@ -1,0 +1,20 @@
+{
+  "name": "animal-tunes",
+  "version": "1.0.0",
+  "description": "Animal Tunes is a fun and interactive ElectronJS app for toddlers. Press keys to play animal sounds, with each sound corresponding to an animal graphic on the screen. It's a playful way for kids to learn animal sounds while enjoying an engaging, colorful interface.",
+  "main": "main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "electron .",
+    "build": "electron-builder"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^32.0.2",
+    "electron-builder": "^25.0.5"
+  },
+  "dependencies": {
+  }
+}

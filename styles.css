@@ -1,0 +1,192 @@
+body {
+    margin: 0;
+    padding: 0;
+    background-color: #f5f5f5; /* Dull light background */
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr); /* 6 columns */
+    grid-template-rows: repeat(3, 1fr);   /* 3 rows */
+    gap: 20px; /* Spacing between the circles */
+    width: 90vw; /* Utilize more of the screen width */
+    height: 80vh; /* Adjusted for rectangular layout */
+    justify-items: center; /* Center circles horizontally */
+    align-items: center; /* Center circles vertically */
+}
+
+.circle {
+    width: 200px;  /* Circle size */
+    height: 200px; /* Circle size */
+    border-radius: 50%;
+    background-color: #fff;
+    border: 5px;
+    background-size: 1000px 1000px;
+    /* Color and shadow enhancements */
+    box-shadow: 0px 6px 15px rgba(0, 0, 0, 0.15); /* Add a subtle shadow */
+    filter: saturate(1.2); /* Slight saturation to make colors more vibrant */
+    transition: transform 0.2s ease, box-shadow 0.2s ease, filter 0.2s ease; /* Smooth transition */
+}
+
+/* Hover effect: Increase brightness, grow, and enhance shadow */
+.circle:hover {
+    transform: scale(1.1); /* Enlarge by 10% */
+    box-shadow: 0px 10px 25px rgba(0, 0, 0, 0.2); /* Deeper shadow */
+    filter: brightness(1.2); /* Brighten up the colors */
+}
+
+/* Click effect: Bounce effect */
+.circle:active {
+    transform: scale(0.95); /* Shrink slightly on click */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Key press animation (will be added dynamically with JavaScript) */
+.pressed {
+    animation: bounce 0.3s ease;
+}
+
+/* Bounce animation */
+@keyframes bounce {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.2); /* Grow */
+    }
+    100% {
+        transform: scale(1); /* Return to original size */
+    }
+}
+
+
+.animal1 {
+    background-position: 10px;
+    background-size: 100%;
+    background-image: url('./images/tiger.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal2 {
+    background-position: 10px;
+    background-size: 100%;
+    background-image: url('./images/cow.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal3 {
+    background-position: 10px;
+    background-size: 100%;
+    background-image: url('./images/lion.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal4 {
+    background-position: center;
+    background-size: 100%;
+    background-image: url('./images/deer.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal5 {
+    background-position: center;
+    background-size: 160%;
+    background-image: url('./images/zebra.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal6 {
+    background-position: center;
+    background-size: 100%;
+    background-image: url('./images/monkey.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal7 {
+    background-position: center;
+    background-size: 80%;
+    background-image: url('./images/hen.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal8 {
+    background-position: -10px 2px;
+    background-size: 100%;
+    background-image: url('./images/horse.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal9 {
+    background-position: center;
+    background-size: 90%;
+    background-image: url('./images/panda.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal10 {
+    background-position: center;
+    background-size: 90%;
+    background-image: url('./images/elephant.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal11 {
+    background-position: center;
+    background-size: 90%;
+    background-image: url('./images/hippo.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal12 {
+    background-position: center;
+    background-size: 95%;
+    background-image: url('./images/camel.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal13 {
+    background-position: center;
+    background-size: 100%;
+    background-image: url('./images/snake.jpg');
+}
+
+.animal14 {
+    background-position: center;
+    background-size: 100%;
+    background-image: url('./images/rabbit.jpg');
+}
+
+.animal15 {
+    background-position: 13px 10px;
+    background-size: 100%;
+    background-image: url('./images/rhino.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal16 {
+    background-position: center;
+    background-size: 100%;
+    background-image: url('./images/giraffe.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal17 {
+    background-position: center;
+    background-size: 95%;
+    background-image: url('./images/cat.jpg');
+    background-repeat: no-repeat;
+}
+
+.animal18 {
+    background-position: center;
+    background-size: 100%;
+    background-image: url('./images/dog.jpg');
+    background-repeat: no-repeat;
+}
+
+
